@@ -26,7 +26,7 @@ class cgrates::service (
 	
 	if ($manage_service) {
 		service { 'cgrates' :
-    		enable_service => $enable_service,
+    		enable => $enable_service,
 			ensure         => running,
 			hasrestart     => true,
     	}
