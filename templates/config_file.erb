@@ -5,8 +5,6 @@
 // Real-time Online/Offline Charging System (OCS) for Telecom & ISP environments
 // Copyright (C) ITsysCOM GmbH
 
-	"<%= @config_section %>": {
-		<%= @config_hash.to_json %>
-	},
-
+	"<%= @config_section %>": <%= JSON.pretty_generate(@config_hash) %>,
+		
 }#
