@@ -49,7 +49,7 @@ class cgrates (
 	
 	cgrates::config_generator { 'general':
 		precedence 	=> '1',
-		config_path => $cgrates::params::config_path
+		config_path => $cgrates::params::config_path,
 		config_hash => {
 			"node_id" => $::hostname,
 		},
