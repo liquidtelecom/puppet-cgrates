@@ -47,9 +47,17 @@ class cgrates (
 	# later we may paramaterise and call from this manifest but this could get very very messy
 	# will generate general and listen sections as per the defaults unless overridden
 	
+	cgrates::config_generator {'general':
+		$precedence = '1',
+		$config_hash = {
+			"node_id" => $::hostname,
+		}
+		
+	}
 	
 	#data backend (redis/mongo)
-	
+	# for now we will assume backends "exist" or defined else where and we are just configuring
+	# later we can/will add some kind of manage_backend parameter to allow config/management of a backend on a specific node
 	
 	#storage backend (mongo/mysql)
 
