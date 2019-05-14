@@ -37,6 +37,7 @@ class cgrates::install (
 	  	  	owner  => 'root',
 	  	  	group  => 'root',
 	  	  	mode   => '0755',
+			recurse => true, 
 	  	  	purge => $manage_config,
 		}
 	}
