@@ -48,8 +48,8 @@ class cgrates (
 	# will generate general and listen sections as per the defaults unless overridden
 	
 	cgrates::config_generator { 'general':
-		$precedence 	=> '1',
-		$config_hash 	=> {
+		precedence 	=> '1',
+		config_hash 	=> {
 			"node_id" => $::hostname,
 		},
 	}
