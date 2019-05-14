@@ -25,12 +25,12 @@
 # a section will ultimately be contained as a JSON object
 # potentially have some kind of precedence prefixed to file name 
 # e.g. a_general.json, b_datadb.json etc
-include cgrates::params
+
 define cgrates::config_generator (
 	$config_section	= "$name",
 	$precedence 	= undef,
 	$config_hash	= undef,
-	$config_path	= $cgrates::params::config_path,
+	$config_path	= undef,
 	$ensure			= 'present',
 ) {
 
@@ -39,6 +39,8 @@ define cgrates::config_generator (
 	} else {
 		$filename = $name
 	}
+	
+	
 
 	file { "${config_path}/${filename}.json":
   		ensure 		=> $ensure,
