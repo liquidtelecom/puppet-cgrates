@@ -28,7 +28,7 @@ class cgrates (
 	$config_path			= $cgrates::params::config_path,
 	$manage_config			= $cgrates::params::manage_config,
 	
-) inherits zabbix::params {
+) inherits cgrates::params {
 	
 	#TODO - add manage repo support (needs public cgrates repo)
 
