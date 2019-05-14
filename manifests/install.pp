@@ -23,7 +23,7 @@ class cgrates::install (
 	$cgrates_version		= $cgrates::params::cgrates_version,
 	$config_path			= $cgrates::params::config_path,
 	$manage_config			= $cgrates::params::manage_config,
-) inherits zabbix::params {
+) inherits cgrates::params {
 	
 	#phase 1 assumes a repo exists - one might be able to make it work without a repo - e.g. download http file and install it
     package { 'cgrates' :

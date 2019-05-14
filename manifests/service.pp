@@ -22,7 +22,7 @@
 class cgrates::service (
 	$manage_service			= $cgrates::params::manage_service,
 	$enable_service			= $cgrates::params::enable_service,
-) inherits zabbix::params {
+) inherits cgrates::params {
 	
 	if ($manage_service) {
 		service { 'cgrates' :
