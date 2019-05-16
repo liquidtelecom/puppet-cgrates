@@ -110,7 +110,7 @@ class cgrates (
 		stor_db_name				=> $data_db_name,
 		stor_db_user				=> $data_db_user,
 		stor_db_password			=> $data_db_password,
-		data_db_redis_sentinel		=> $data_db_redis_sentinel
+		data_db_redis_sentinel		=> $data_db_redis_sentinel,
 		stor_db_query_timeout		=> $stor_db_query_timeout,
 		manage_stor_db				=> $manage_stor_db,
 	} 
