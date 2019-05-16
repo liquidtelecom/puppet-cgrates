@@ -112,7 +112,7 @@ class cgrates (
 		data_db_password			=> $data_db_password,
 		data_db_redis_sentinel		=> $data_db_redis_sentinel,
 		data_db_query_timeout		=> $stor_db_query_timeout,
-		manage_stor_db				=> $manage_stor_db,
+		manage_data_db				=> $manage_data_db,
 	} 
 		
 	#storage backend (mongo/mysql)
