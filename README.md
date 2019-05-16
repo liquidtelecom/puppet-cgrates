@@ -3,8 +3,8 @@
 #### Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with [cgrates]](#setup)
-    * [What [cgrates] affects](#what-[cgrates]-affects)
+2. [Setup - The basics of getting started with cgrates](#setup)
+    * [What cgrates affects](#what-cgrates-affects)
     * [Setup requirements](#setup-requirements)
 3. [Usage - Configuration options and additional functionality](#usage)
 4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
@@ -13,13 +13,13 @@
 
 ## Description
 
-This module seems to be able to manage the [CGRateS](http://cgrates.org/) rating engine      
+This module seems to be able to manage the cgrates(http://cgrates.org/) rating engine      
 
 This module will try to install CGRateS from an apt repo and configure key services, because of the flexibility of cgrates configuration, this module will seek to try to remain flexible, either by letting the user to generate config files directly or to use specific sub-manifests for each key microservice in the architecture.
 
 ## Setup
 
-### What [cgrates] affects
+### What cgrates affects
 
 Right now this module assumes that you have configured an APT repo that contains the cgrates package, later it will be able to use a http source to download the deb. Right now this module is not doing anything to configure the data_db and stor_db backends, these should be configured seperately, perhaps with modules like:
 
@@ -28,7 +28,7 @@ Right now this module assumes that you have configured an APT repo that contains
 
 This Module is only tested on current Ubuntu 18.04 LTS, but there is no reason why current Ubuntu (Non-LTS) and Debian releases won't work but Your Mileage May Vary
 
-### Setup Requirements **OPTIONAL**
+### Setup Requirements 
 
 Install the Module in your usual preferred way
 
