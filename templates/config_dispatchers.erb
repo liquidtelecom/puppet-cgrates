@@ -8,15 +8,15 @@
 "dispatchers": {
 	"enabled": "<%= @dispatchers_enabled %>",
 	"indexed_selects": "<%= @dispatchers_indexed_selects %>",
-	<% if @dispatchers_string_indexed_fields -%>
-	"string_indexed_fields": "<%= @dispatchers_string_indexed_fields %>",
-	<% end -%>
-	<% if @dispatchers_prefix_indexed_fields -%>
-	"prefix_indexed_fields": "<%= @dispatchers_prefix_indexed_fields %>",
-	<% end -%>
-	<% if @dispatchers_attributes_conns -%>
-	"attributes_conns": "<%= @dispatchers_attributes_conns %>",
-	<% end -%>
+<% if @dispatchers_string_indexed_fields -%>
+	"string_indexed_fields": <%= @dispatchers_string_indexed_fields %>,
+<% end -%>
+<% if @dispatchers_prefix_indexed_fields -%>
+	"prefix_indexed_fields": <%= @dispatchers_prefix_indexed_fields %>,
+<% end -%>
+<% if @dispatchers_attributes_conns -%>
+	"attributes_conns": <%= @dispatchers_attributes_conns %>,
+<% end -%>
 },
 		
 }
