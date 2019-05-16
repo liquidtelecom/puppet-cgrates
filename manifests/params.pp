@@ -74,8 +74,8 @@ class cgrates::params {
 	#dispatchers
 	$dispatchers_enabled				= false
 	$dispatchers_indexed_selects		= true
-	$dispatchers_string_indexed_fields	= []
-	$dispatchers_prefix_indexed_fields	= []
-	$dispatchers_attributes_conns		= []
+	$dispatchers_string_indexed_fields	= undef
+	$dispatchers_prefix_indexed_fields	= undef
+	$dispatchers_attributes_conns		= undef
 	
 }
