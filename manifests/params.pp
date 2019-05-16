@@ -32,40 +32,47 @@ class cgrates::params {
 		default: { fail('Unsupported Operating System') }
   	}
   
-	$manage_service 	= true
-	$enable_service 	= true
-	$manage_config		= true
+	$manage_service 					= true
+	$enable_service 					= true
+	$manage_config						= true
 	
-	$rpc_json_bind		= '127.0.0.1:2012'
-	$rpc_json_tls_bind	= '127.0.0.1:2022'
-	$rpc_gob_bind		= '127.0.0.1:2013'
-	$rpc_gob_tls_bind	= '127.0.0.1:2023'
-	$rpc_http_bind		= '127.0.0.1:2080'
-	$rpc_http_tls_bind	= '127.0.0.1:2280'
+	$rpc_json_bind						= '127.0.0.1:2012'
+	$rpc_json_tls_bind					= '127.0.0.1:2022'
+	$rpc_gob_bind						= '127.0.0.1:2013'
+	$rpc_gob_tls_bind					= '127.0.0.1:2023'
+	$rpc_http_bind						= '127.0.0.1:2080'
+	$rpc_http_tls_bind					= '127.0.0.1:2280'
 	
 	# data_db params
-	$data_db_type				= '*redis'
-	$data_db_host				= '127.0.0.1'
-	$data_db_port				= '6379'
-	$data_db_name				= '10'
-	$data_db_user				= 'cgrates'
-	$data_db_password			= ''
-	$data_db_redis_sentinel		= ''
-	$data_db_query_timeout		= '10s'
-	$manage_data_db				= false
+	$data_db_type						= '*redis'
+	$data_db_host						= '127.0.0.1'
+	$data_db_port						= '6379'
+	$data_db_name						= '10'
+	$data_db_user						= 'cgrates'
+	$data_db_password					= ''
+	$data_db_redis_sentinel				= ''
+	$data_db_query_timeout				= '10s'
+	$manage_data_db						= false
 	
 	# stor_db params
-	$stor_db_type				= '*mysql'
-	$stor_db_host				= '127.0.0.1'
-	$stor_db_port				= '3306'
-	$stor_db_name				= 'cgrates'
-	$stor_db_user				= 'cgrates'
-	$stor_db_password			= ''
-	$stor_db_max_open_conns		= '100'
-	$stor_db_max_idle_conns		= '10'
-	$stor_db_conn_max_lifetime	= '0'
-	$stor_db_cdrs_indexes		= '[]'
-	$stor_db_query_timeout		= '10s'
-	$manage_stor_db				= false
+	$stor_db_type						= '*mysql'
+	$stor_db_host						= '127.0.0.1'
+	$stor_db_port						= '3306'
+	$stor_db_name						= 'cgrates'
+	$stor_db_user						= 'cgrates'
+	$stor_db_password					= ''
+	$stor_db_max_open_conns				= '100'
+	$stor_db_max_idle_conns				= '10'
+	$stor_db_conn_max_lifetime			= '0'
+	$stor_db_cdrs_indexes				= []
+	$stor_db_query_timeout				= '10s'
+	$manage_stor_db						= false
+	
+	#dispatchers
+	$dispatchers_enabled				= false
+	$dispatchers_indexed_selects		= true
+	$dispatchers_string_indexed_fields	= []
+	$dispatchers_prefix_indexed_fields	= []
+	$dispatchers_attributes_conns		= []
 	
 }
