@@ -46,8 +46,8 @@ class cgrates::params {
 	# data_db params
 	$data_db_type						= '*redis'
 	$data_db_host						= '127.0.0.1'
-	$data_db_port						= '6379'
-	$data_db_name						= '10'
+	$data_db_port						= 6379
+	$data_db_name						= 10
 	$data_db_user						= 'cgrates'
 	$data_db_password					= ''
 	$data_db_redis_sentinel				= ''
@@ -57,13 +57,13 @@ class cgrates::params {
 	# stor_db params
 	$stor_db_type						= '*mysql'
 	$stor_db_host						= '127.0.0.1'
-	$stor_db_port						= '3306'
+	$stor_db_port						= 3306
 	$stor_db_name						= 'cgrates'
 	$stor_db_user						= 'cgrates'
 	$stor_db_password					= ''
-	$stor_db_max_open_conns				= '100'
-	$stor_db_max_idle_conns				= '10'
-	$stor_db_conn_max_lifetime			= '0'
+	$stor_db_max_open_conns				= 100
+	$stor_db_max_idle_conns				= 10
+	$stor_db_conn_max_lifetime			= 0
 	$stor_db_cdrs_indexes				= []
 	$stor_db_query_timeout				= '10s'
 	$manage_stor_db						= false
