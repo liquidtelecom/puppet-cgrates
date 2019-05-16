@@ -6,8 +6,8 @@
 // Copyright (C) ITsysCOM GmbH
 
 "dispatchers": {
-	"enabled": "<%= @dispatchers_enabled %>",
-	"indexed_selects": "<%= @dispatchers_indexed_selects %>",
+	"enabled": <%= @dispatchers_enabled %>,
+	"indexed_selects": <%= @dispatchers_indexed_selects %>,
 <% if @dispatchers_string_indexed_fields -%>
 	"string_indexed_fields": <%= @dispatchers_string_indexed_fields %>,
 <% end -%>
