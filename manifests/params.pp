@@ -35,6 +35,9 @@ class cgrates::params {
 	$manage_service 					= true
 	$enable_service 					= true
 	$manage_config						= true
+	$node_id							= $::hostname
+	$default_tenant						= 'cgrates.org'
+	
 	
 	$rpc_json_bind						= '127.0.0.1:2012'
 	$rpc_json_tls_bind					= '127.0.0.1:2022'

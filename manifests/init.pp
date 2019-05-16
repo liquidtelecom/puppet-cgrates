@@ -27,6 +27,8 @@ class cgrates (
 	$enable_service				= $cgrates::params::enable_service,
 	$config_path				= $cgrates::params::config_path,
 	$manage_config				= $cgrates::params::manage_config,
+	$node_id					= $cgrates::params::node_id,
+	$default_tenant				= $cgrates::params::default_tenant,
 	$rpc_json_bind				= $cgrates::params::rpc_json_bind,
 	$rpc_json_tls_bind			= $cgrates::params::rpc_json_tls_bind,
 	$rpc_gob_bind				= $cgrates::params::rpc_gob_bind,
@@ -82,7 +84,8 @@ class cgrates (
 		precedence 	=> '1',
 		config_path => $cgrates::params::config_path,
 		config_hash => {
-			"node_id" => $::hostname,
+			"node_id" 			=> $node_id,
+			"default_tenant"	=> $default_tenant,
 		},
 	}
 	
