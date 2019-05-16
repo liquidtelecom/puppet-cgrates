@@ -50,7 +50,7 @@ class cgrates::params {
 	$data_db_type						= '*redis'
 	$data_db_host						= '127.0.0.1'
 	$data_db_port						= 6379
-	$data_db_name						= 10
+	$data_db_name						= "10"
 	$data_db_user						= 'cgrates'
 	$data_db_password					= ''
 	$data_db_redis_sentinel				= ''
