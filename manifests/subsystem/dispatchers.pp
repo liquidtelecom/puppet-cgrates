@@ -18,10 +18,10 @@ class cgrates::subsystem::dispatchers (
 		config_hash => {
 			"enabled" 				=> $dispatchers_enabled,
 			"indexed_selects" 		=> $dispatchers_indexed_selects,
-			"string_indexed_fields" => ($dispatchers_string_indexed_fields if $dispatchers_string_indexed_fields) }.reject{ |k,v| v.nil? },
-			"prefix_indexed_fields" => ($dispatchers_prefix_indexed_fields if $dispatchers_prefix_indexed_fields) }.reject{ |k,v| v.nil? },
-			"attributes_conns" 		=> ($dispatchers_attributes_conns if $dispatchers_attributes_conns) }.reject{ |k,v| v.nil? },			
-		},
+			"string_indexed_fields" => ($dispatchers_string_indexed_fields if $dispatchers_string_indexed_fields),
+			"prefix_indexed_fields" => ($dispatchers_prefix_indexed_fields if $dispatchers_prefix_indexed_fields),
+			"attributes_conns" 		=> ($dispatchers_attributes_conns if $dispatchers_attributes_conns),			
+		}.reject{ |k,v| v.nil? },
 	}
 	
 }
