@@ -1,0 +1,20 @@
+{
+
+// FILE MANAGED BY PUPPET - DO NOT EDIT
+
+// Real-time Online/Offline Charging System (OCS) for Telecom & ISP environments
+// Copyright (C) ITsysCOM GmbH
+
+"attributes": {
+	"enabled": <%= @attributes_enabled %>,
+	"indexed_selects": <%= @attributes_indexed_selects %>,
+	"process_runs": <%= @attributes_process_runs %>,
+<% if @attributes_string_indexed_fields -%>
+	"string_indexed_fields": <%= @attributes_string_indexed_fields %>,
+<% end -%>
+<% if @attributes_prefix_indexed_fields -%>
+	"prefix_indexed_fields": <%= @attributes_prefix_indexed_fields %>,
+<% end -%>
+},
+		
+}

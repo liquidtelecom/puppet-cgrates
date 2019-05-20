@@ -101,4 +101,11 @@ class cgrates::params {
 	$chargers_string_indexed_fields		= undef
 	$chargers_prefix_indexed_fields		= undef
 	
+	#attributes
+	$attributes_enabled					= false
+	$attributes_indexed_selects			= true
+	$attributes_string_indexed_fields	= undef
+	$attributes_prefix_indexed_fields	= undef
+	$attributes_process_runs			= 1
+	
 }
