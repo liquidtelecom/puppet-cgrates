@@ -8,13 +8,13 @@
 "sessions": {
 	"enabled": <%= @sessions_enabled %>,
 	"listen_bijson": <%= @sessions_listen_bijson %>,
-	"debit_interval": <%= @sessions_store_sessions %>,
-	"store_session_costs": <%= @sessions_session_cost_retries %>,
-	"min_call_duration": <%= @sessions_session_cost_retries %>,
-	"max_call_duration": <%= @sessions_session_cost_retries %>,
-	"session_ttl": <%= @sessions_session_cost_retries %>,
-	"client_protocol": <%= @sessions_session_cost_retries %>,
-	"channel_sync_interval": <%= @sessions_session_cost_retries %>,
+	"debit_interval": <%= @sessions_debit_interval %>,
+	"store_session_costs": <%= @sessions_store_session_costs %>,
+	"min_call_duration": <%= @sessions_min_call_duration %>,
+	"max_call_duration": <%= @sessions_max_call_duration %>,
+	"session_ttl": <%= @sessions_session_ttl %>,
+	"client_protocol": <%= @sessions_client_protocol %>,
+	"channel_sync_interval": <%= @sessions_channel_sync_interval %>,
 <% if @sessions_chargers_conns -%>
 	"chargers_conns": <%= @sessions_chargers_conns %>,
 <% end -%>
