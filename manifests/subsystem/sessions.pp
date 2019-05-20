@@ -2,7 +2,7 @@ class cgrates::subsystem::sessions (
 	$sessions_enabled						= $cgrates::params::sessions_enabled,
 	$sessions_listen_bijson					= $cgrates::params::sessions_extra_fields,
 	$sessions_chargers_conns				= $cgrates::params::sessions_store_sessions,
-	$sessions_rals_conns					= $cgrates::params::sessions_session_cost_retries
+	$sessions_rals_conns					= $cgrates::params::sessions_session_cost_retries,
 	$sessions_cdrs_conns					= $cgrates::params::sessions_chargers_conns,
 	$sessions_resources_conns				= $cgrates::params::sessions_rals_conns,
 	$sessions_thresholds_conns				= $cgrates::params::sessions_attributes_conns,

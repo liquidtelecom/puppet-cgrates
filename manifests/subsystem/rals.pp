@@ -4,7 +4,7 @@ class cgrates::subsystem::rals (
 	$rals_stats_conns					= $cgrates::params::rals_stats_conns,
 	$rals_rp_subject_prefix_matching	= $cgrates::params::rals_rp_subject_prefix_matching,
 	$rals_remove_expired				= $cgrates::params::rals_remove_expired,
-	$rals_max_computed_usage			= $cgrates::params::rals_max_computed_usage
+	$rals_max_computed_usage			= $cgrates::params::rals_max_computed_usage,
 	$rals_balance_rating_subject		= $cgrates::params::rals_balance_rating_subject,
 ) inherits cgrates::params {
 

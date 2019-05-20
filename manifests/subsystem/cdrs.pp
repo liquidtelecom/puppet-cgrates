@@ -2,7 +2,7 @@ class cgrates::subsystem::cdrs (
 	$cdrs_enabled					= $cgrates::params::cdrs_enabled,
 	$cdrs_extra_fields				= $cgrates::params::cdrs_extra_fields,
 	$cdrs_store_cdrs				= $cgrates::params::cdrs_store_cdrs,
-	$cdrs_session_cost_retries		= $cgrates::params::cdrs_session_cost_retries
+	$cdrs_session_cost_retries		= $cgrates::params::cdrs_session_cost_retries,
 	$cdrs_chargers_conns			= $cgrates::params::cdrs_chargers_conns,
 	$cdrs_rals_conns				= $cgrates::params::cdrs_rals_conns,
 	$cdrs_attributes_conns			= $cgrates::params::cdrs_attributes_conns,
