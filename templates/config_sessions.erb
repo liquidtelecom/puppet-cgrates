@@ -1,0 +1,59 @@
+{
+
+// FILE MANAGED BY PUPPET - DO NOT EDIT
+
+// Real-time Online/Offline Charging System (OCS) for Telecom & ISP environments
+// Copyright (C) ITsysCOM GmbH
+
+"sessions": {
+	"enabled": <%= @sessions_enabled %>,
+	"listen_bijson": <%= @sessions_listen_bijson %>,
+	"debit_interval": <%= @sessions_store_sessions %>,
+	"store_session_costs": <%= @sessions_session_cost_retries %>,
+	"min_call_duration": <%= @sessions_session_cost_retries %>,
+	"max_call_duration": <%= @sessions_session_cost_retries %>,
+	"session_ttl": <%= @sessions_session_cost_retries %>,
+	"client_protocol": <%= @sessions_session_cost_retries %>,
+	"channel_sync_interval": <%= @sessions_session_cost_retries %>,
+<% if @sessions_chargers_conns -%>
+	"chargers_conns": <%= @sessions_chargers_conns %>,
+<% end -%>
+<% if @sessions_rals_conns -%>
+	"rals_conns": <%= @sessions_rals_conns %>,
+<% end -%>
+<% if @sessions_cdrs_conns -%>
+	"cdrs_conns": <%= @sessions_cdrs_conns %>,
+<% end -%>
+<% if @sessions_resources_conns -%>
+	"resources_conns": <%= @sessions_resources_conns %>,
+<% end -%>
+<% if @sessions_thresholds_conns -%>
+	"thresholds_conns": <%= @sessions_thresholds_conns %>,
+<% end -%>
+<% if @sessions_stats_conns -%>
+	"stats_conns": <%= @sessions_stats_conns %>,
+<% end -%>
+<% if @sessions_suppliers_conns -%>
+	"suppliers_conns": <%= @sessions_suppliers_conns %>,
+<% end -%>
+<% if @sessions_attributes_conns -%>
+	"attributes_conns": <%= @sessions_attributes_conns %>,
+<% end -%>
+<% if @sessions_session_replication_conns -%>
+	"session_replication_conns": <%= @sessions_session_replication_conns %>,
+<% end -%>
+<% if @sessions_session_ttl_max_delay -%>
+	"session_ttl_max_delay": <%= @sessions_session_ttl_max_delay %>,
+<% end -%>
+<% if @sessions_session_ttl_last_used -%>
+	"session_ttl_last_used": <%= @sessions_session_ttl_last_used %>,
+<% end -%>
+<% if @sessions_session_ttl_usage -%>
+	"session_ttl_usage": <%= @sessions_session_ttl_usage %>,
+<% end -%>
+<% if @sessions_session_indexes -%>
+	"session_indexes": <%= @sessions_session_indexes %>,
+<% end -%>
+},
+		
+}

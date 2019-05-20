@@ -124,4 +124,28 @@ class cgrates::params {
 	$cdrs_stats_conns					= undef
 	$cdrs_online_cdr_exports			= undef
 	
+	#sessions
+	$sessions_enabled						= false
+	$sessions_listen_bijson					= "127.0.0.1:2014"
+	$sessions_chargers_conns				= undef
+	$sessions_rals_conns					= undef
+	$sessions_cdrs_conns					= undef
+	$sessions_resources_conns				= undef
+	$sessions_thresholds_conns				= undef
+	$sessions_stats_conns					= undef
+	$sessions_suppliers_conns				= undef
+	$sessions_attributes_conns				= undef
+	$sessions_session_replication_conns		= undef
+	$sessions_debit_interval				= '0s'
+	$sessions_store_session_costs			= false
+	$sessions_min_call_duration				= "0s"
+	$sessions_max_call_duration				= "3h"
+	$sessions_session_ttl					= "0s"
+	$sessions_session_ttl_max_delay			= undef
+	$sessions_session_ttl_last_used			= undef
+	$sessions_session_ttl_usage				= undef
+	$sessions_session_indexes				= undef
+	$sessions_client_protocol				= 1.0
+	$sessions_channel_sync_interval			= "0"
+	
 }
