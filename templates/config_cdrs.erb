@@ -7,9 +7,11 @@
 
 "cdrs": {
 	"enabled": <%= @cdrs_enabled %>,
-	"extra_fields": <%= @cdrs_extra_fields %>,
 	"store_cdrs": <%= @cdrs_store_cdrs %>,
 	"session_cost_retries": <%= @cdrs_session_cost_retries %>,
+<% if @cdrs_extra_fields -%>
+	"extra_fields": <%= @cdrs_extra_fields %>,
+<% end -%>
 <% if @cdrs_chargers_conns -%>
 	"chargers_conns": <%= @cdrs_chargers_conns %>,
 <% end -%>
