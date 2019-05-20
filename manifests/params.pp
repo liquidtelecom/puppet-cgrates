@@ -72,14 +72,14 @@ class cgrates::params {
 	$manage_stor_db						= false
 	
 	#dispatchers
-	$dispatchers_enabled				= false
+	$dispatchers_enabled				= true
 	$dispatchers_indexed_selects		= true
 	$dispatchers_string_indexed_fields	= undef
 	$dispatchers_prefix_indexed_fields	= undef
 	$dispatchers_attributes_conns		= undef
 	
 	#stats
-	$stats_enabled						= false
+	$stats_enabled						= true
 	$stats_indexed_selects				= true
 	$stats_store_interval				= "0"
 	$stats_store_uncompressed_limit		= 0
@@ -88,32 +88,32 @@ class cgrates::params {
 	$stats_thresholds_conns				= undef
 	
 	#thresholds
-	$thresholds_enabled					= false
+	$thresholds_enabled					= true
 	$thresholds_indexed_selects			= true
 	$thresholds_store_interval			= "0"
 	$thresholds_string_indexed_fields	= undef
 	$thresholds_prefix_indexed_fields	= undef
 	
 	#chargers
-	$chargers_enabled					= false
+	$chargers_enabled					= true
 	$chargers_indexed_selects			= true
 	$chargers_attributes_conns			= undef
 	$chargers_string_indexed_fields		= undef
 	$chargers_prefix_indexed_fields		= undef
 	
 	#attributes
-	$attributes_enabled					= false
+	$attributes_enabled					= true
 	$attributes_indexed_selects			= true
 	$attributes_string_indexed_fields	= undef
 	$attributes_prefix_indexed_fields	= undef
 	$attributes_process_runs			= 1
 	
 	#scheduler
-	$scheduler_enabled					= false
+	$scheduler_enabled					= true
 	$scheduler_cdrs_conns				= undef
 	
 	#cdrs
-	$cdrs_enabled						= false
+	$cdrs_enabled						= true
 	$cdrs_extra_fields					= undef
 	$cdrs_store_cdrs					= true
 	$cdrs_session_cost_retries			= 5
@@ -125,7 +125,7 @@ class cgrates::params {
 	$cdrs_online_cdr_exports			= undef
 	
 	#sessions
-	$sessions_enabled					= false
+	$sessions_enabled					= true
 	$sessions_listen_bijson				= "127.0.0.1:2014"
 	$sessions_chargers_conns			= undef
 	$sessions_rals_conns				= undef
@@ -149,7 +149,7 @@ class cgrates::params {
 	$sessions_channel_sync_interval		= "0"
 	
 	#rals
-	$rals_enabled						= false
+	$rals_enabled						= true
 	$rals_thresholds_conns				= undef
 	$rals_stats_conns					= undef
 	$rals_rp_subject_prefix_matching	= false
