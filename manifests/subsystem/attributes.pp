@@ -3,7 +3,7 @@ class cgrates::subsystem::attributes (
 	$attributes_indexed_selects			= $cgrates::params::attributes_indexed_selects,
 	$attributes_string_indexed_fields	= $cgrates::params::attributes_string_indexed_fields,
 	$attributes_prefix_indexed_fields	= $cgrates::params::attributes_prefix_indexed_fields,
-	$attributes_process_runs			= $cgrates::params::attributes_prefix_indexed_fields,
+	$attributes_process_runs			= $cgrates::params::attributes_process_runs,
 ) inherits cgrates::params {
 
 
