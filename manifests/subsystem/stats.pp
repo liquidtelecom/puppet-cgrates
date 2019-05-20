@@ -1,8 +1,6 @@
 class cgrates::subsystem::stats (
-	$precedence 						= '1',
 	$stats_enabled						= $cgrates::params::stats_enabled,
 	$stats_indexed_selects				= $cgrates::params::stats_indexed_selects,
-	$stats_store_interval				= $cgrates::params::stats_store_interval,
 	$stats_store_interval				= $cgrates::params::stats_store_interval,
 	$stats_store_uncompressed_limit		= $cgrates::params::stats_store_uncompressed_limit
 	$stats_string_indexed_fields		= $cgrates::params::stats_string_indexed_fields,

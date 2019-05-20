@@ -1,5 +1,4 @@
 class cgrates::subsystem::dispatchers (
-	$precedence 						= '1',
 	$dispatchers_enabled				= $cgrates::params::dispatchers_enabled,
 	$dispatchers_indexed_selects		= $cgrates::params::dispatchers_indexed_selects,
 	$dispatchers_string_indexed_fields	= $cgrates::params::dispatchers_string_indexed_fields,

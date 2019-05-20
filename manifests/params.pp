@@ -87,4 +87,11 @@ class cgrates::params {
 	$stats_prefix_indexed_fields		= undef
 	$stats_thresholds_conns				= undef
 	
+	#thresholds
+	$thresholds_enabled						= false
+	$thresholds_indexed_selects				= true
+	$thresholds_store_interval				= "0"
+	$thresholds_string_indexed_fields		= undef
+	$thresholds_prefix_indexed_fields		= undef
+	
 }
