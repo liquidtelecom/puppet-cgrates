@@ -8,13 +8,13 @@
 "sessions": {
 	"enabled": <%= @sessions_enabled %>,
 	"listen_bijson": "<%= @sessions_listen_bijson %>",
-	"debit_interval": <%= @sessions_debit_interval %>,
+	"debit_interval": "<%= @sessions_debit_interval %>",
 	"store_session_costs": <%= @sessions_store_session_costs %>,
-	"min_call_duration": <%= @sessions_min_call_duration %>,
-	"max_call_duration": <%= @sessions_max_call_duration %>,
-	"session_ttl": <%= @sessions_session_ttl %>,
+	"min_call_duration": "<%= @sessions_min_call_duration %>",
+	"max_call_duration": "<%= @sessions_max_call_duration %>",
+	"session_ttl": "<%= @sessions_session_ttl %>",
 	"client_protocol": <%= @sessions_client_protocol %>,
-	"channel_sync_interval": <%= @sessions_channel_sync_interval %>,
+	"channel_sync_interval": "<%= @sessions_channel_sync_interval %>",
 <% if @sessions_chargers_conns -%>
 	"chargers_conns": <%= JSON.pretty_generate(@sessions_chargers_conns) %>,
 <% end -%>
@@ -43,13 +43,13 @@
 	"session_replication_conns": <%= JSON.pretty_generate(@sessions_session_replication_conns) %>,
 <% end -%>
 <% if @sessions_session_ttl_max_delay -%>
-	"session_ttl_max_delay": <%= @sessions_session_ttl_max_delay %>,
+	"session_ttl_max_delay": <%= @sessions_session_ttl_max_delay %>",
 <% end -%>
 <% if @sessions_session_ttl_last_used -%>
-	"session_ttl_last_used": <%= @sessions_session_ttl_last_used %>,
+	"session_ttl_last_used": "<%= @sessions_session_ttl_last_used %>",
 <% end -%>
 <% if @sessions_session_ttl_usage -%>
-	"session_ttl_usage": <%= @sessions_session_ttl_usage %>,
+	"session_ttl_usage": "<%= @sessions_session_ttl_usage %>",
 <% end -%>
 <% if @sessions_session_indexes -%>
 	"session_indexes": <%= @sessions_session_indexes %>,
