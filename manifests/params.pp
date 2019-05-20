@@ -108,4 +108,8 @@ class cgrates::params {
 	$attributes_prefix_indexed_fields	= undef
 	$attributes_process_runs			= 1
 	
+	#scheduler
+	$scheduler_enabled					= false
+	$scheduler_cdrs_conns				= undef
+	
 }
