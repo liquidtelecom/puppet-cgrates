@@ -78,4 +78,13 @@ class cgrates::params {
 	$dispatchers_prefix_indexed_fields	= undef
 	$dispatchers_attributes_conns		= undef
 	
+	#stats
+	$stats_enabled						= false
+	$stats_indexed_selects				= true
+	$stats_store_interval				= "0"
+	$stats_store_uncompressed_limit		= 0
+	$stats_string_indexed_fields		= undef
+	$stats_prefix_indexed_fields		= undef
+	$stats_thresholds_conns				= undef
+	
 }
