@@ -8,7 +8,7 @@
 "scheduler": {
 	"enabled": <%= @scheduler_enabled %>,
 <% if @scheduler_cdrs_conns -%>
-	"cdrs_conns": <%= @scheduler_cdrs_conns %>,
+	"cdrs_conns": <%= JSON.pretty_generate(@scheduler_cdrs_conns) %>,
 <% end -%>
 },
 		

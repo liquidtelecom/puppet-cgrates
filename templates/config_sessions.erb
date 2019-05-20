@@ -16,31 +16,31 @@
 	"client_protocol": <%= @sessions_client_protocol %>,
 	"channel_sync_interval": <%= @sessions_channel_sync_interval %>,
 <% if @sessions_chargers_conns -%>
-	"chargers_conns": <%= @sessions_chargers_conns %>,
+	"chargers_conns": <%= JSON.pretty_generate(@sessions_chargers_conns) %>,
 <% end -%>
 <% if @sessions_rals_conns -%>
-	"rals_conns": <%= @sessions_rals_conns %>,
+	"rals_conns": <%= JSON.pretty_generate(@sessions_rals_conns) %>,
 <% end -%>
 <% if @sessions_cdrs_conns -%>
-	"cdrs_conns": <%= @sessions_cdrs_conns %>,
+	"cdrs_conns": <%= JSON.pretty_generate(@sessions_cdrs_conns) %>,
 <% end -%>
 <% if @sessions_resources_conns -%>
-	"resources_conns": <%= @sessions_resources_conns %>,
+	"resources_conns": <%= JSON.pretty_generate(@sessions_resources_conns) %>,
 <% end -%>
 <% if @sessions_thresholds_conns -%>
-	"thresholds_conns": <%= @sessions_thresholds_conns %>,
+	"thresholds_conns": <%= JSON.pretty_generate(@sessions_thresholds_conns) %>,
 <% end -%>
 <% if @sessions_stats_conns -%>
-	"stats_conns": <%= @sessions_stats_conns %>,
+	"stats_conns": <%= JSON.pretty_generate(@sessions_stats_conns) %>,
 <% end -%>
 <% if @sessions_suppliers_conns -%>
-	"suppliers_conns": <%= @sessions_suppliers_conns %>,
+	"suppliers_conns": <%= JSON.pretty_generate(@sessions_suppliers_conns) %>,
 <% end -%>
 <% if @sessions_attributes_conns -%>
-	"attributes_conns": <%= @sessions_attributes_conns %>,
+	"attributes_conns": <%= JSON.pretty_generate(@sessions_attributes_conns) %>,
 <% end -%>
 <% if @sessions_session_replication_conns -%>
-	"session_replication_conns": <%= @sessions_session_replication_conns %>,
+	"session_replication_conns": <%= JSON.pretty_generate(@sessions_session_replication_conns) %>,
 <% end -%>
 <% if @sessions_session_ttl_max_delay -%>
 	"session_ttl_max_delay": <%= @sessions_session_ttl_max_delay %>,

@@ -9,7 +9,7 @@
 	"enabled": <%= @chargers_enabled %>,
 	"indexed_selects": <%= @chargers_indexed_selects %>,
 <% if @chargers_attributes_conns -%>
-	"attributes_conns": <%= @chargers_attributes_conns %>,
+	"attributes_conns": <%= JSON.pretty_generate(@chargers_attributes_conns) %>,
 <% end -%>
 <% if @chargers_string_indexed_fields -%>
 	"string_indexed_fields": <%= @chargers_string_indexed_fields %>,

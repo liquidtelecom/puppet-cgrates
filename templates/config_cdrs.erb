@@ -10,25 +10,25 @@
 	"store_cdrs": <%= @cdrs_store_cdrs %>,
 	"session_cost_retries": <%= @cdrs_session_cost_retries %>,
 <% if @cdrs_extra_fields -%>
-	"extra_fields": <%= @cdrs_extra_fields %>,
+	"extra_fields": <%= JSON.pretty_generate(@cdrs_extra_fields) %>,
 <% end -%>
 <% if @cdrs_chargers_conns -%>
-	"chargers_conns": <%= @cdrs_chargers_conns %>,
+	"chargers_conns": <%= JSON.pretty_generate(@cdrs_chargers_conns) %>,
 <% end -%>
 <% if @cdrs_rals_conns -%>
-	"rals_conns": <%= @cdrs_rals_conns %>,
+	"rals_conns": <%= JSON.pretty_generate(@cdrs_rals_conns) %>,
 <% end -%>
 <% if @cdrs_attributes_conns -%>
-	"attributes_conns": <%= @cdrs_attributes_conns %>,
+	"attributes_conns": <%= JSON.pretty_generate(@cdrs_attributes_conns) %>,
 <% end -%>
 <% if @cdrs_thresholds_conns -%>
-	"thresholds_conns": <%= @cdrs_thresholds_conns %>,
+	"thresholds_conns": <%= JSON.pretty_generate(@cdrs_thresholds_conns) %>,
 <% end -%>
 <% if @cdrs_stats_conns -%>
-	"stats_conns": <%= @cdrs_stats_conns %>,
+	"stats_conns": <%= JSON.pretty_generate(@cdrs_stats_conns) %>,
 <% end -%>
 <% if @cdrs_online_cdr_exports -%>
-	"online_cdr_exports": <%= @cdrs_online_cdr_exports %>,
+	"online_cdr_exports": <%= JSON.pretty_generate(@cdrs_online_cdr_exports) %>,
 <% end -%>
 },
 		

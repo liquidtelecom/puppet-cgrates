@@ -17,7 +17,7 @@
 	"prefix_indexed_fields": <%= @stats_prefix_indexed_fields %>,
 <% end -%>
 <% if @stats_attributes_conns -%>
-	"thresholds_conns": <%= @stats_thresholds_conns %>,
+	"thresholds_conns": <%= JSON.pretty_generate(@stats_thresholds_conns) %>,
 <% end -%>
 },
 		

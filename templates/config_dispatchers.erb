@@ -15,7 +15,7 @@
 	"prefix_indexed_fields": <%= @dispatchers_prefix_indexed_fields %>,
 <% end -%>
 <% if @dispatchers_attributes_conns -%>
-	"attributes_conns": <%= @dispatchers_attributes_conns %>,
+	"attributes_conns": <%= JSON.pretty_generate(@dispatchers_attributes_conns) %>,
 <% end -%>
 },
 		
