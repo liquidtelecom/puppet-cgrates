@@ -112,4 +112,16 @@ class cgrates::params {
 	$scheduler_enabled					= false
 	$scheduler_cdrs_conns				= undef
 	
+	#cdrs
+	$cdrs_enabled						= false
+	$cdrs_extra_fields					= undef
+	$cdrs_store_cdrs					= true
+	$cdrs_session_cost_retries			= 5
+	$cdrs_chargers_conns				= undef
+	$cdrs_rals_conns					= undef
+	$cdrs_attributes_conns				= undef
+	$cdrs_thresholds_conns				= undef
+	$cdrs_stats_conns					= undef
+	$cdrs_online_cdr_exports			= undef
+	
 }

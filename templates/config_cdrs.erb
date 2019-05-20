@@ -1,0 +1,33 @@
+{
+
+// FILE MANAGED BY PUPPET - DO NOT EDIT
+
+// Real-time Online/Offline Charging System (OCS) for Telecom & ISP environments
+// Copyright (C) ITsysCOM GmbH
+
+"cdrs": {
+	"enabled": <%= @cdrs_enabled %>,
+	"extra_fields": <%= @cdrs_extra_fields %>,
+	"store_cdrs": <%= @cdrs_store_cdrs %>,
+	"session_cost_retries": <%= @cdrs_session_cost_retries %>,
+<% if @cdrs_chargers_conns -%>
+	"string_indexed_fields": <%= @cdrs_chargers_conns %>,
+<% end -%>
+<% if @cdrs_rals_conns -%>
+	"prefix_indexed_fields": <%= @cdrs_rals_conns %>,
+<% end -%>
+<% if @cdrs_attributes_conns -%>
+	"thresholds_conns": <%= @cdrs_attributes_conns %>,
+<% end -%>
+<% if @cdrs_thresholds_conns -%>
+	"string_indexed_fields": <%= @cdrs_thresholds_conns %>,
+<% end -%>
+<% if @cdrs_stats_conns -%>
+	"prefix_indexed_fields": <%= @cdrs_stats_conns %>,
+<% end -%>
+<% if @cdrs_online_cdr_exports -%>
+	"thresholds_conns": <%= @cdrs_online_cdr_exports %>,
+<% end -%>
+},
+		
+}
