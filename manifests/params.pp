@@ -88,10 +88,17 @@ class cgrates::params {
 	$stats_thresholds_conns				= undef
 	
 	#thresholds
-	$thresholds_enabled						= false
-	$thresholds_indexed_selects				= true
-	$thresholds_store_interval				= "0"
-	$thresholds_string_indexed_fields		= undef
-	$thresholds_prefix_indexed_fields		= undef
+	$thresholds_enabled					= false
+	$thresholds_indexed_selects			= true
+	$thresholds_store_interval			= "0"
+	$thresholds_string_indexed_fields	= undef
+	$thresholds_prefix_indexed_fields	= undef
+	
+	#chargers
+	$chargers_enabled					= false
+	$chargers_indexed_selects			= true
+	$chargers_attributes_conns			= undef
+	$chargers_string_indexed_fields		= undef
+	$chargers_prefix_indexed_fields		= undef
 	
 }
