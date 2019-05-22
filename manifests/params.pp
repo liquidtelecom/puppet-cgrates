@@ -35,6 +35,7 @@ class cgrates::params {
 	$manage_service 					= true
 	$enable_service 					= true
 	$manage_config						= true
+	$install_source						= ''
 	$node_id							= $::hostname
 	$default_tenant						= 'cgrates.org'
 	

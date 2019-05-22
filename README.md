@@ -34,12 +34,19 @@ Install the Module in your usual preferred way
 
 ## Usage
 
-### Basic Setup of Package and Service and Defaults
+### Basic Setup of Package and Service and Defaults - Assuming an APT repo exists already
 
 ```puppet
 include ::cgrates
 ```
 
+### Using HTTP download to deb file 
+
+```puppet
+	class { '::cgrates::':
+		install_source		=> "http://www.cgrates.org/tmp_pkg/cgrates_0.9.1~rc8_amd64.deb",
+    }
+```
 ## Reference
 
 Users need a complete list of your module's classes, types, defined types providers, facts, and functions, along with the parameters for each. You can provide this list either via Puppet Strings code comments or as a complete list in the README Reference section.
