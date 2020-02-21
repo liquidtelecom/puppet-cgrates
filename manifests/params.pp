@@ -24,13 +24,15 @@ class cgrates::params {
   	case $facts['os']['name'] {
     	'Ubuntu', 'Debian' : {
 	  		#SOME PARAM
-			$manage_repo		= false
+			$manage_repo		= true
 			$cgrates_version	= 'installed'
 			$config_path		= '/etc/cgrates'
 
 		}
 		default: { fail('Unsupported Operating System') }
   	}
+	
+	$cgrates_version					= 'v0.10'
   
 	$manage_service 					= true
 	$enable_service 					= true

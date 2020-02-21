@@ -23,6 +23,7 @@
 class cgrates (
 	$manage_repo				= $cgrates::params::manage_repo,
 	$cgrates_version			= $cgrates::params::cgrates_version,
+	$cgrates_release			= $cgrates::params::cgrates_release,
 	$manage_service				= $cgrates::params::manage_service,
 	$enable_service				= $cgrates::params::enable_service,
 	$config_path				= $cgrates::params::config_path,
@@ -64,7 +65,14 @@ class cgrates (
 	
 ) inherits cgrates::params {
 	
-	#TODO - add manage repo support (needs public cgrates repo)
+	#TODO - allow custom repo
+	if $install_source != '' {
+		if $manage_repo {
+			class { '::cgrates::repo':
+				cgrates_release	=>	$cgrates_release,
+			}
+		}
+	}
 
 	class { '::cgrates::install':
 		cgrates_version	=> $cgrates_version,
