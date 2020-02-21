@@ -35,7 +35,7 @@ class cgrates::repo (
 				},
 			} 
 		}
-		default: { fail('Unrecognized operating system for Splunk Repo Setup') }
+		default: { fail('Unrecognized operating system for CGRateS Repo Setup') }
 	}
 
 }	
