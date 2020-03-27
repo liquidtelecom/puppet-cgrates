@@ -27,7 +27,6 @@ class cgrates (
 	$manage_service				= $cgrates::params::manage_service,
 	$enable_service				= $cgrates::params::enable_service,
 	$config_path				= $cgrates::params::config_path,
-	$install_source				= $cgrates::params::install_source,
 	$manage_config				= $cgrates::params::manage_config,
 	$node_id					= $cgrates::params::node_id,
 	$default_tenant				= $cgrates::params::default_tenant,
@@ -66,11 +65,9 @@ class cgrates (
 ) inherits cgrates::params {
 	
 	#TODO - allow custom repo
-	if $install_source == undef {
-		if $manage_repo {
-			class { '::cgrates::repo':
-				cgrates_release	=>	$cgrates_release,
-			}
+	if $manage_repo {
+		class { '::cgrates::repo':
+			cgrates_release	=>	$cgrates_release,
 		}
 	}
 
@@ -78,7 +75,6 @@ class cgrates (
 		cgrates_version	=> $cgrates_version,
 		manage_config	=> $manage_config,
 		config_path		=> $config_path,
-		install_source	=> $install_source,
 	} 
 	
 	class { '::cgrates::service':
