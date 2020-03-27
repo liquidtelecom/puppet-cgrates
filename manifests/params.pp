@@ -32,7 +32,7 @@ class cgrates::params {
 		default: { fail('Unsupported Operating System') }
   	}
 	
-	$cgrates_version					= 'v0.10'
+	$cgrates_release					= 'v0.10'
   
 	$manage_service 					= true
 	$enable_service 					= true
