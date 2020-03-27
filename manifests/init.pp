@@ -66,7 +66,7 @@ class cgrates (
 ) inherits cgrates::params {
 	
 	#TODO - allow custom repo
-	if $install_source != '' {
+	if $install_source == undef {
 		if $manage_repo {
 			class { '::cgrates::repo':
 				cgrates_release	=>	$cgrates_release,
