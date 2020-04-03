@@ -30,7 +30,7 @@ class cgrates::repo (
 				repos => 'main',
 				release => $cgrates_release,
 				key => {
-					id => '8058109B4994C9B7',
+					id => '8BC417EB7B9C7EECE3A3BFD48058109B4994C9B7',
 					source => 'http://apt.cgrates.org/apt.cgrates.org.gpg.key',
 				},
 			} 
