@@ -152,7 +152,7 @@ class cgrates::params {
 	
 	#apiers
 	$apiers_enabled						= true
-	$apiers_caches_conns				= ["*internal"]s
+	$apiers_caches_conns				= ["*internal"]
 	$apiers_scheduler_conns				= undef
 	$apiers_attributes_conns			= undef
 	
