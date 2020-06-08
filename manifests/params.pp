@@ -150,6 +150,12 @@ class cgrates::params {
 	$sessions_client_protocol			= 1.0
 	$sessions_channel_sync_interval		= "0"
 	
+	#apiers
+	$apiers_enabled						= true
+	$apiers_caches_conns				= "*internal"
+	$apiers_scheduler_conns				= undef
+	$apiers_attributes_conns			= undef
+	
 	#rals
 	$rals_enabled						= true
 	$rals_thresholds_conns				= undef
