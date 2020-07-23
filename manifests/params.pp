@@ -39,7 +39,7 @@ class cgrates::params {
 	$manage_config						= true
 	$node_id							= $::hostname
 	$default_tenant						= 'cgrates.org'
-	$reply_timeout						= 2
+	$reply_timeout						= '2s'
 	
 	
 	$rpc_json_bind						= '127.0.0.1:2012'
