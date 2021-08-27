@@ -111,9 +111,9 @@ class cgrates::params {
 	$attributes_prefix_indexed_fields	= undef
 	$attributes_process_runs			= 1
 	
-	#scheduler
-	$scheduler_enabled					= true
-	$scheduler_cdrs_conns				= undef
+	#schedulers
+	$schedulers_enabled					= true
+	$schedulers_cdrs_conns				= undef
 	
 	#cdrs
 	$cdrs_enabled						= true
