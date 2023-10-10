@@ -31,9 +31,16 @@ class cgrates::repo (
 				release => $cgrates_release,
 				key => {
 					id => '8BC417EB7B9C7EECE3A3BFD48058109B4994C9B7',
-					source => 'http://apt.cgrates.org/apt.cgrates.org.gpg.key',
+					source => 'https://apt.cgrates.org/apt.cgrates.org.gpg.key',
 				},
 			} 
+
+			# TEMP workaround until APT module supports storing keys in the correct place in current Debian/Ubuntu Releases
+			file { '/etc/apt/trusted.gpg.d/cgrates.asc':
+				path => '/etc/apt/trusted.gpg.d/cgrates.asc',
+				ensure => 'file',
+				source => 'https://apt.cgrates.org/apt.cgrates.org.gpg.key',
+			}
 		}
 		default: { fail('Unrecognized operating system for CGRateS Repo Setup') }
 	}
