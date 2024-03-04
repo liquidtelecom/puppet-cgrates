@@ -35,7 +35,7 @@ define cgrates::config_generator (
 ) {
 
 	if ( $precedence ) {
-		$filename = "$precendence_$name"
+		$filename = "${precendence}_${name}"
 	} else {
 		$filename = $name
 	}
