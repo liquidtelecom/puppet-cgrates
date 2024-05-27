@@ -17,7 +17,7 @@ class cgrates::subsystem::rals (
   	  	group  		=> 'root',
   	  	mode   		=> '0644',
 	    content 	=> template('cgrates/config_rals.erb'),
-		notify		=> Service["cgrates"],
+		notify		=> Service['cgrates'],
 	}
 	
 }

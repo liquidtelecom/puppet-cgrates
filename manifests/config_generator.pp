@@ -48,7 +48,7 @@ define cgrates::config_generator (
   	  	group  		=> 'root',
   	  	mode   		=> '0644',
 	    content 	=> template('cgrates/config_file.erb'),
-		notify		=> Service["cgrates"],
+		notify		=> Service['cgrates'],
 	}
 
 }

@@ -37,7 +37,7 @@ class cgrates::params {
 	$manage_service 					= true
 	$enable_service 					= true
 	$manage_config						= true
-	$node_id							= $facts['networking']['hostname']
+	$node_id							    = $facts['networking']['hostname']
 	$default_tenant						= 'cgrates.org'
 	$reply_timeout						= '2s'
 	
