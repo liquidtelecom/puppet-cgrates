@@ -23,7 +23,7 @@ class cgrates::repo (
 	$cgrates_release		= $cgrates::params::cgrates_release,
 ) inherits cgrates::params {
 
-	case $operatingsystem {
+	case $facts['os']['name'] {
     	'ubuntu', 'debian': { 	
 			apt::source { 'cgrates': 
 				location => 'http://apt.cgrates.org/debian/',
